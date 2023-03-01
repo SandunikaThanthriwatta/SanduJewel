@@ -9,8 +9,8 @@ namespace SanduJewel.Models
         public string O_Name { get; set; }
         public int O_Contact_Number { get; set; }
         public string O_Email { get; set; }
-        public virtual ICollection<Jewellery> Jewelleries { get; set; }
 
+        public virtual ICollection<Jewellery> Jewelleries { get; set; }
 
     }
 }

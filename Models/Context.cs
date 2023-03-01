@@ -7,7 +7,7 @@ using SanduJewel.Models;
 
 namespace SanduJewel.Models
 {
-    public class Contex : DbContext
+    public class Context : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Owner> Owners { get; set; }
@@ -15,13 +15,7 @@ namespace SanduJewel.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<Jewellery> Jewelleries { get; set; }
 
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseMySql("server=127.0.0.1;port=3306;uid=root;pwd=sandu.07;database=sandujewel", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql"));
-            }
-        }*/
+      
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

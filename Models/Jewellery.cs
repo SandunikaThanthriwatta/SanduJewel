@@ -10,9 +10,8 @@ namespace SanduJewel.Models
         public string J_Category { get; set; }
         public int J_Weight { get; set; }
         public int J_Price { get; set; }
-        public int C_ID{ get; set; }
+    
         public virtual Customer Customer { get; set; }
-        public int O_ID { get; set; }
         public virtual Owner Owner { get; set; }
 
 

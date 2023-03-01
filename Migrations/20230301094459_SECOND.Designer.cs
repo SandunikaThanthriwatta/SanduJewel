@@ -9,7 +9,7 @@ using SanduJewel.Models;
 
 namespace SanduJewel.Migrations
 {
-    [DbContext(typeof(Contex))]
+    [DbContext(typeof(Context))]
     [Migration("20230301094459_SECOND")]
     partial class SECOND
     {
