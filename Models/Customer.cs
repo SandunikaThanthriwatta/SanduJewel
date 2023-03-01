@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
+using System.Net.Sockets;
 
 namespace SanduJewel.Models
 {
@@ -11,5 +13,7 @@ namespace SanduJewel.Models
         public string C_Email { get; set; }
         public string C_Address { get; set; }
         public int C_BirthDay { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Jewellery> Jewelleries { get; set; }
     }
 }
